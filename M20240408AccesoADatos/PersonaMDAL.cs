@@ -58,7 +58,7 @@ namespace M20240408AccesoADatos
             }
             if (!string.IsNullOrWhiteSpace(personaM.ApellidoM))
             {
-                query = query.Where(s => s.NombreM.Contains(personaM.ApellidoM));
+                query = query.Where(s => s.ApellidoM.Contains(personaM.ApellidoM));
             }
             return await query.ToListAsync();
         }

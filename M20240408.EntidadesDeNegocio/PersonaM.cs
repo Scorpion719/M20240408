@@ -15,12 +15,12 @@ namespace M20240408.EntidadesDeNegocio
         public int Id { get; set; }
        
         [StringLength(60)]
-        [Display(Name ="Emerson")]
+        [Display(Name ="Nombre")]
         [Required(ErrorMessage ="El campo Nombre es Requerido")]
         public string NombreM { get; set; }
         [Required(ErrorMessage= "El campo Apellido es Requerido")]
         [StringLength(60)]
-        [Display(Name = "Aguilar")]
+        [Display(Name = "Apellido")]
         public string ApellidoM { get; set; }
         [Required(ErrorMessage= "El campo Fecha Nacimiento es Requerido")]
         [Display(Name = "Fecha Nacimiento")]
