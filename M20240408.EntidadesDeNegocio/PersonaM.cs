@@ -16,20 +16,20 @@ namespace M20240408.EntidadesDeNegocio
        
         [StringLength(60)]
         [Display(Name ="Emerson")]
-        [Required(ErrorMessageResourceName ="El campo Nombre es Requerido")]
+        [Required(ErrorMessage ="El campo Nombre es Requerido")]
         public string NombreM { get; set; }
-        [Required(ErrorMessageResourceName = "El campo Apellido es Requerido")]
+        [Required(ErrorMessage= "El campo Apellido es Requerido")]
         [StringLength(60)]
         [Display(Name = "Aguilar")]
         public string ApellidoM { get; set; }
-        [Required(ErrorMessageResourceName = "El campo Fecha Nacimiento es Requerido")]
+        [Required(ErrorMessage= "El campo Fecha Nacimiento es Requerido")]
         [Display(Name = "Fecha Nacimiento")]
         public DateTime FechaNacimientoM { get; set; }
         [Display(Name = "Sueldo")]
-        [Required(ErrorMessageResourceName = "El campo Sueldo es Requerido")]
+        [Required(ErrorMessage = "El campo Sueldo es Requerido")]
         public decimal SueldoM { get; set; }
         [Display(Name = "Status")]
-        [Required(ErrorMessageResourceName = "El campo Status es Requerido")]
+        [Required(ErrorMessage= "El campo Status es Requerido")]
         public byte StatusM { get; set; }
 
     }
