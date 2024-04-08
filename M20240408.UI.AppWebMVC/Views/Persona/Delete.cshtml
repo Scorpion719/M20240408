@@ -1,0 +1,50 @@
+﻿@model M20240408.EntidadesDeNegocio.PersonaM
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Eliminar Persona</h1>
+
+
+<div>
+    <h4>Persona</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NombreM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombreM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ApellidoM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ApellidoM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaNacimientoM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaNacimientoM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SueldoM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SueldoM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StatusM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StatusM)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Eliminar" class="btn btn-outline-danger" /> |
+        <a class="btn btn-outline-dark" asp-action="Index">Volver</a>
+    </form>
+</div>

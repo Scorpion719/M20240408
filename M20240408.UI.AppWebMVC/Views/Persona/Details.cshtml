@@ -1,0 +1,47 @@
+﻿@model M20240408.EntidadesDeNegocio.PersonaM
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalles de la Persona</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NombreM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombreM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ApellidoM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ApellidoM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaNacimientoM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaNacimientoM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SueldoM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SueldoM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StatusM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StatusM)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Ir a editar", "Edit", new { id = Model.Id }) |
+    <a class="btn btn-outline-success" asp-action="Index">Volver</a>
+</div>

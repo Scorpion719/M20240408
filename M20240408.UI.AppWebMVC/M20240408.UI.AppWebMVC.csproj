@@ -6,4 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\M20240408.EntidadesDeNegocio\M20240408.EntidadesDeNegocio.csproj" />
+    <ProjectReference Include="..\M20240408.LogicaDeNegocio\M20240408.LogicaDeNegocio.csproj" />
+  </ItemGroup>
+
 </Project>
